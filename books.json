@@ -1,0 +1,18 @@
+[
+  {
+      "id": 0,
+      "name": "The Name of the Wind",
+      "autor": "Patrick Rothfuss",
+      "read": "Read",
+      "lenguage": "Spanish",
+      "editorial": "Blue"
+  },
+  {
+      "id": 1,
+      "name": "Percy Jackson",
+      "autor": "Rick Riordan",
+      "read": "Read",
+      "lenguage": "English",
+      "editorial": "Disney Hyperion"
+  },
+]
