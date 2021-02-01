@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../page/users.html">Manejo Java <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">CRUD Libros <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Datos Libro</h3>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <input type="number" id="id" name="id" placeholder="Book ID" />
+                        </div>
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Book Name" />
+                        </div>
+                        <div>
+                            <input type="text" id="autor" name="autor" placeholder="Author Name" />
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Read" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                Read
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radiobtn" id="btnSpanish"
+                                value="Spanish">
+                            <label class="form-check-label" for="btnSpanish">
+                                Spanish
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radiobtn" id="btnEnglish"
+                                value="English">
+                            <label class="form-check-label" for="btnEnglish">
+                                English
+                            </label>
+                        </div>
+                        <div>
+                            <p></p>
+                            <select id="editorial">
+                                <option value="Blue">Blue</option>
+                                <option value="Disney Hyperion">Disney Hyperion</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button id="btnDone" class="btn btn-primary">Done</button>
+                        <button id="btnCancel" class="btn btn-default">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>autor</th>
+                            <th>read</th>
+                            <th>lenguage</th>
+                            <th>editorial</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbBooks">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-success">Edit</button>
+                            <button class="btn btn-danger">Delete</button>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/books.js"></script>
+</body>
+
+</html>
